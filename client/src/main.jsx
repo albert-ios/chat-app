@@ -17,8 +17,7 @@ const store = createStore(
   applyMiddleware(sagaMiddleware)
 );
 
-// Элементарная, но надежная псевдо-авторизация при входе
-const username = prompt('Введите ваше имя для чата:', 'Студент') || 'Студент';
+const username = prompt('Введите ваше имя для входа в чат:', 'Студент') || 'Студент';
 
 const socket = setupSocket(store.dispatch, username);
 
