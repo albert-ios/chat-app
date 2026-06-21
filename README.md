@@ -13,7 +13,7 @@
 2. В папке `client`: выполнить `npm install`, затем `npm run dev`.
 
 ## Ссылка на деплой
-* [Ссылка появится здесь после деплоя]
+* [Ссылка на сайт появится здесь на следующем шаге]
 
-## Качество кода
-[![Maintainability](https://api.codeclimate.com/v1/badges/TODO/maintainability)](https://codeclimate.com/github/TODO/maintainability)
+## Оценка качества кода
+[![Maintainability](https://qlty.sh/gh/albert-ios/projects/chat-app/maintainability.svg)](https://qlty.sh/gh/albert-ios/projects/chat-app)
