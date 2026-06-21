@@ -18,6 +18,7 @@ const store = createStore(
 );
 
 const username = prompt('Введите ваше имя для входа в чат:', 'Студент') || 'Студент';
+sessionStorage.setItem('chat_author', username);
 
 const socket = setupSocket(store.dispatch, username);
 

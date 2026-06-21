@@ -2,7 +2,9 @@ import * as types from '../constants/ActionTypes';
 import { messageReceived, populateUsersList } from '../actions';
 
 const setupSocket = (dispatch, username) => {
-  const socket = new WebSocket('ws://localhost:8989');
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const wsUrl = isLocal ? 'ws://localhost:8989' : 'wss://ПРОПИШИ_ЗДЕСЬ_ССЫЛКУ_НА_RENDER_БЭКЕНД';
+  const socket = new WebSocket(wsUrl);
 
   socket.onopen = () => {
     socket.send(JSON.stringify({

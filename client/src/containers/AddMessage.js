@@ -3,7 +3,8 @@ import AddMessageComponent from '../components/AddMessage';
 import { addMessage } from '../actions';
 
 const mapDispatchToProps = dispatch => ({
-  dispatch: (message, author) => {
+  dispatch: (message) => {
+    const author = sessionStorage.getItem('chat_author') || 'Юзер';
     dispatch(addMessage(message, author));
   }
 });
