@@ -13,7 +13,7 @@
 2. В папке `client`: выполнить `npm install`, затем `npm run dev`.
 
 ## Ссылка на деплой
-* [Ссылка на сайт появится здесь на следующем шаге]
+* https://app.netlify.com/projects/luminous-tapioca-dec769/overview
 
 ## Оценка качества кода
 [![Maintainability](https://qlty.sh/gh/albert-ios/projects/chat-app/maintainability.svg)](https://qlty.sh/gh/albert-ios/projects/chat-app)
